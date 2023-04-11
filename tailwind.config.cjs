@@ -5,6 +5,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				"sans-serif": ['"Space Grotesk"', "sans-serif"],
+				"mono-space": ['"Space Mono"', "monospace"],
+			},
+			scale: {
+				102: "1.02",
 			},
 		},
 	},

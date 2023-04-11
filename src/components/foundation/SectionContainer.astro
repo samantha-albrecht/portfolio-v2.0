@@ -1,0 +1,11 @@
+---
+export interface Props {
+	bgColor?: string;
+}
+
+const { bgColor } = Astro.props;
+---
+
+<section class={`${bgColor} px-4 md:px-10 `}>
+	<slot />
+</section>

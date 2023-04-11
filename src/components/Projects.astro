@@ -1,0 +1,69 @@
+---
+import SmallContainer from "./foundation/SmallContainer.astro";
+import LargeContainer from "./foundation/LargeContainer.astro";
+import { Picture } from "@astrojs/image/components";
+import localImage from "../assets/images/ami.png";
+
+interface Item {
+	imageSrc: string;
+	imageAlt: string;
+	caption: string;
+	title: string;
+	body: string;
+	type: string;
+	href: string;
+}
+
+// const project = [
+// 	{
+// 		imageSrc: "/images/work/ami.png",
+// 		imageAlt: "Actionable Marketing Institute by CoSchedule",
+// 		caption: "Actionable Marketing Institute powered by CoSchedule",
+// 		title: "Online Marketing Course Pages",
+// 		body: "The challenge: create engaging, user friendly, customizable web pages to elevate the Actionable Marketing Institute.",
+// 		type: "",
+// 		href: "/work/actionable-marketing-institute",
+// 	},
+// 	{
+// 		imageSrc: "/images/work/hs.png",
+// 		imageAlt: "Headline Studio by CoSchedule",
+// 		caption: "Headline Studio by CoSchedule",
+// 		title: "New Product Sign Up Page",
+// 		body: "The challenge: design & build a high converting product page with sign up for the new Headline Studio app.",
+// 		type: "",
+// 		href: "/work/headline-studio",
+// 	},
+// 	{
+// 		imageSrc: "/images/work/hs-app.png",
+// 		imageAlt: "Headline Studio by CoSchedule",
+// 		caption: "Headline Studio by CoSchedule",
+// 		title: "Feature Education & User Adoption",
+// 		body: "The challenge: help users understand how to use one of the most powerful features in Headline Studio.",
+// 		type: "",
+// 		href: "",
+// 	},
+// ];
+---
+
+<LargeContainer>
+	<a
+		href=""
+		class="grid gap-y-8 before:absolute before:-inset-x-4 before:-top-4 before:bottom-0 before:z-0 before:p-4 before:transition before:duration-500 before:ease-in-out hover:before:bg-gray-100"
+	>
+		<Picture
+			class="ease relative mx-auto w-full rounded-md"
+			src={localImage}
+			widths={[200, 400, 800]}
+			sizes="(max-width: 800px) 100vw, 800px"
+			formats={["avif", "jpeg", "png", "webp"]}
+			alt="The Astro logo"
+		/>
+		<SmallContainer>
+			<div class="grid gap-y-2">
+				<div class="justify-self-start font-mono-space text-sm">Title</div>
+				<h2 class="justify-self-start text-2xl font-medium">Headline Studio</h2>
+				<p class="justify-self-start pb-8">Small description</p>
+			</div>
+		</SmallContainer>
+	</a>
+</LargeContainer>
