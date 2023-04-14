@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
 import Projects from "../components/Projects.astro";
+import Process from "../components/Process.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -20,12 +21,54 @@ import Projects from "../components/Projects.astro";
 		<SectionContainer>
 			<Projects />
 		</SectionContainer>
+		<SectionContainer bgColor="bg-gray-100">
+			<div class="py-24">
+				<Process />
+			</div>
+		</SectionContainer>
+		<SectionContainer bgColor="bg-black">
+			<LargeContainer>
+				<figure class="grid gap-y-4 py-16 text-white">
+					<blockquote>
+						<p class="text-xl leading-normal md:text-2xl md:leading-normal">
+							I always look forward to seeing the creative & functional designs
+							Samantha comes up with. She's great at taking in feedback and
+							iterating as&nbsp;needed.
+						</p>
+					</blockquote>
+					<figcaption class="font-mono-space text-sm">
+						– Anonymous peer review
+					</figcaption>
+				</figure>
+			</LargeContainer>
+		</SectionContainer>
 
-		<SectionContainer bgColor="bg-emerald-500">
-			<section>Process</section>
+		<SectionContainer>
 			<section>About</section>
-			<section>Experience</section>
+		</SectionContainer>
+		<SectionContainer bgColor="bg-gray-100">
+			<div class="py-24">
+				<section>Experience</section>
+			</div>
+		</SectionContainer>
+		<SectionContainer>
 			<section>Books</section>
+		</SectionContainer>
+		<SectionContainer bgColor="bg-black">
+			<LargeContainer>
+				<figure class="grid gap-y-4 py-16 text-white">
+					<blockquote>
+						<p class="text-xl leading-normal md:text-2xl md:leading-normal">
+							Samantha does an incredible job paying attention to all the
+							details & big picture goals for projects. The projects she ships
+							are always done with care, passion, and&nbsp;quality.
+						</p>
+					</blockquote>
+					<figcaption class="font-mono-space text-sm">
+						– Anonymous peer review
+					</figcaption>
+				</figure>
+			</LargeContainer>
 		</SectionContainer>
 
 		<!-- <ul role="list" class="link-card-grid">

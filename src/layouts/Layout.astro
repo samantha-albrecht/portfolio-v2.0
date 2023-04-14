@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="bg-fuchsia-500 font-sans-serif">
+<html lang="en" class="bg-fuchsia-500 font-sans-serif leading-normal">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -25,8 +25,14 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-white">
-		<Navbar />
-		<slot />
+		<div class="grid-row-2 grid">
+			<div
+				class="sticky bottom-0 left-0 right-0 z-10 row-start-2 md:bottom-auto md:top-1 md:row-start-1"
+			>
+				<Navbar />
+			</div>
+			<slot />
+		</div>
 		<Footer />
 	</body>
 </html>
