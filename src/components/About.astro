@@ -1,0 +1,45 @@
+---
+import { Picture } from "@astrojs/image/components";
+import LargeContainer from "./foundation/LargeContainer.astro";
+import localImage from "../assets/images/ami.png";
+import SmallContainer from "./foundation/SmallContainer.astro";
+---
+
+<LargeContainer>
+	<div class="grid gap-y-1">
+		<div class="font-mono-space leading-normal">About</div>
+		<h2 class="text-4xl font-medium leading-normal">
+			Designer-who-knows-how-to-code
+		</h2>
+	</div>
+	<Picture
+		class="ease relative mx-auto w-full rounded-md pb-16 pt-4"
+		src={localImage}
+		widths={[200, 400, 800]}
+		sizes="(max-width: 800px) 100vw, 800px"
+		formats={["avif", "jpeg", "png", "webp"]}
+		alt="The Astro logo"
+	/>
+	<SmallContainer>
+		<div class="grid gap-y-4">
+			<p class="leading-loose">
+				I'm Samantha, a designer and developer with over three years of
+				experience shipping work for a growing SaaS startup. I’m responsible for
+				creating and building web experiences that drive customer growth and
+				expand company awareness. My focus has been on conversion design, web
+				performance, and search engine optimization from a development
+				standpoint.
+			</p>
+			<p class="leading-loose">
+				Working for a small, scrappy SaaS startup I'm involved with the
+				end-to-end web development process – brainstorming to launch. As a
+				designer-who-knows-how-to-code, I have keen eye for layout & design in
+				addition to a knack for solving technical code challenges.
+			</p>
+			<p class="leading-loose">
+				My current interest is in strengthening my product design chops and
+				being proficient in JavaScript and React.
+			</p>
+		</div>
+	</SmallContainer>
+</LargeContainer>

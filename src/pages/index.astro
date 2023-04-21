@@ -5,6 +5,7 @@ import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
 import Projects from "../components/Projects.astro";
 import Process from "../components/Process.astro";
+import About from "../components/About.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -44,8 +45,11 @@ import Process from "../components/Process.astro";
 		</SectionContainer>
 
 		<SectionContainer>
-			<section>About</section>
+			<div class="py-24">
+				<About />
+			</div>
 		</SectionContainer>
+
 		<SectionContainer bgColor="bg-gray-100">
 			<div class="py-24">
 				<section>Experience</section>
@@ -70,8 +74,9 @@ import Process from "../components/Process.astro";
 				</figure>
 			</LargeContainer>
 		</SectionContainer>
+	</main>
 
-		<!-- <ul role="list" class="link-card-grid">
+	<!-- <ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
 				title="Documentation"
@@ -93,5 +98,4 @@ import Process from "../components/Process.astro";
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul> -->
-	</main>
 </Layout>
