@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import LargeContainer from "../components/foundation/LargeContainer.astro";
+import SmallContainer from "../components/foundation/SmallContainer.astro";
+import SectionContainer from "../components/foundation/SectionContainer.astro";
+---
+
+<Layout title="MyChart by Epic Case Study">
+	<main>
+		<header
+			class="bg-slate-200 pb-28 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-36 lg:pt-20"
+		>
+			<LargeContainer>
+				<img
+					src={myChart}
+					alt="MyChart Sign Up Screenshot"
+					class="mx-auto w-full pb-12 md:pb-8"
+				/>
+				<div
+					class="grid gap-y-6 px-4 md:gap-x-8 md:px-0 lg:grid-cols-[3fr_1fr] lg:gap-x-16"
+				>
+					<div class="grid gap-y-2">
+						<h1
+							class="text-3xl font-medium leading-normal md:text-4xl md:leading-normal"
+						>
+							MyChart by Epic
+						</h1>
+						<p class="text-sm leading-loose md:text-base md:leading-loose">
+							A case study of the sign in experience, highlighting improvements
+							to the user interface, accessibility, and user experience.
+						</p>
+					</div>
+					<aside
+						class="border-t border-solid border-gray-300 pt-6 text-sm leading-loose text-gray-600 lg:border-0 lg:pt-0"
+					>
+						<ul class="grid gap-y-2 md:grid-cols-2 lg:grid-cols-1">
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>My role</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-gray-600"
+									>
+										Research
+									</li>
+									<li>Product design</li>
+								</ul>
+							</li>
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>Tools used</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-gray-600"
+									>
+										Google docs
+									</li>
+									<li>Figma</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</LargeContainer>
+		</header>
+		<div class="-mt-16">
+			<SectionContainer>
+				<LargeContainer>
+					<div class="bg-white p-4 md:py-10">
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p class="leading-loose">
+									As the healthcare industry embraces technology to connect with
+									patients, how can the experience be improved?
+								</p>
+								<p class="leading-loose">
+									The objective of this UX/UI case study is to evaluate and
+									improve the user experience of the MyChart healthcare app.
+								</p>
+								<p class="leading-loose">
+									The study focuses on analyzing and redesigning the login page
+									based on research insights and best design practices. The
+									project aims to create a user-centered design that enhances
+									the app's usability, accessibility, and visual appeal while
+									aligning with the brand's guidelines and requirements.
+								</p>
+							</div>
+						</SmallContainer>
+					</div>
+				</LargeContainer>
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>

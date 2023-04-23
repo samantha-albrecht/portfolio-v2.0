@@ -1,18 +1,10 @@
 ---
 import SmallContainer from "./foundation/SmallContainer.astro";
 import LargeContainer from "./foundation/LargeContainer.astro";
-import { Picture } from "@astrojs/image/components";
-import localImage from "../assets/images/ami.png";
-
-interface Item {
-	imageSrc: string;
-	imageAlt: string;
-	caption: string;
-	title: string;
-	body: string;
-	type: string;
-	href: string;
-}
+import ami from "../assets/images/work/ami/project-screenshot.png?url";
+import hs from "../assets/images/work/hs/project-screenshot.png?url";
+import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png?url";
 
 // const project = [
 // 	{
@@ -43,27 +35,169 @@ interface Item {
 // 		href: "",
 // 	},
 // ];
+
+//class="group grid gap-y-8 before:absolute before:-inset-x-4 before:-top-4 before:bottom-0 before:z-0 before:border before:border-solid before:border-transparent before:p-4 before:transition before:duration-300 before:ease-in-out hover:before:border-gray-200"
 ---
 
 <LargeContainer>
-	<a
-		href=""
-		class="grid gap-y-8 before:absolute before:-inset-x-4 before:-top-4 before:bottom-0 before:z-0 before:border before:border-solid before:border-transparent before:p-4 before:transition before:duration-300 before:ease-in-out hover:before:border-gray-200"
-	>
-		<Picture
-			class="ease relative mx-auto w-full rounded-md"
-			src={localImage}
-			widths={[200, 400, 800]}
-			sizes="(max-width: 800px) 100vw, 800px"
-			formats={["avif", "jpeg", "png", "webp"]}
-			alt="The Astro logo"
-		/>
-		<SmallContainer>
-			<div class="grid gap-y-2">
-				<div class="justify-self-start font-mono-space text-sm">Title</div>
-				<h2 class="justify-self-start text-2xl font-medium">Headline Studio</h2>
-				<p class="justify-self-start pb-8">Small description</p>
+	<div class="grid gap-y-16 pb-24">
+		<a href="" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={hs}
+					alt="Headline Studio Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
 			</div>
-		</SmallContainer>
-	</a>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						Headline Studio App
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A powerful tool that can help content creators improve the
+							effectiveness of their headlines and increase engagement with
+							their content.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Designed and built an AI-powered feature for generating headline
+							ideas...
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="/mychart" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-slate-200 px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={myChart}
+					alt="MyChart Sign Up Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						MyChart by Epic
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							An online patient portal and electronic health record (EHR) system
+							that allows patients to securely access their personal health
+							information from anywhere at any time.
+						</p>
+						<p class="justify-self-start leading-loose">
+							A case study of the sign in experience, highlighting improvements
+							to the user interface, accessibility, and user experience.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#fde5df] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={cosWebsite}
+					alt="CoSchedule.com Homepage Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						CoSchedule.com
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A critical hub for customers and prospects, offering product
+							information and a range of marketing resources. With millions of
+							views each year, it's a vital component of the company's digital
+							strategy.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Rebuilt the website using a modern technology stack to improve
+							page performance and search engine optimization (SEO).
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-violet-200 px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={ami}
+					alt="Actionable Marketing Institute Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						Actionable Marketing Instititue
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A library of online resources and training designed to help
+							marketers and business owners improve their skills and knowledge
+							in digital marketing.
+						</p>
+						<p class="justify-self-start leading-loose">
+							To improve the overall user experience I designed & built custom
+							landing pages for each course that are engaging, user friendly,
+							and customizable.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={hs}
+					alt="Headline Studio Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						Headline Studio
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A powerful tool that can help content creators improve the
+							effectiveness of their headlines and increase engagement with
+							their content.
+						</p>
+						<p class="justify-self-start leading-loose">
+							With the launch of a new app we needed a fresh product page and
+							signup process. I designed & built a low friction, conversion
+							focused landing page.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+	</div>
 </LargeContainer>
