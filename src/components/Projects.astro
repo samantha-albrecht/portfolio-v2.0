@@ -2,41 +2,9 @@
 import SmallContainer from "./foundation/SmallContainer.astro";
 import LargeContainer from "./foundation/LargeContainer.astro";
 import ami from "../assets/images/work/ami/project-screenshot.png?url";
-import hs from "../assets/images/work/hs/project-screenshot.png?url";
+import hsApp from "../assets/images/work/hs-app/project-screenshot.png?url";
 import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
 import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png?url";
-
-// const project = [
-// 	{
-// 		imageSrc: "/images/work/ami.png",
-// 		imageAlt: "Actionable Marketing Institute by CoSchedule",
-// 		caption: "Actionable Marketing Institute powered by CoSchedule",
-// 		title: "Online Marketing Course Pages",
-// 		body: "The challenge: create engaging, user friendly, customizable web pages to elevate the Actionable Marketing Institute.",
-// 		type: "",
-// 		href: "/work/actionable-marketing-institute",
-// 	},
-// 	{
-// 		imageSrc: "/images/work/hs.png",
-// 		imageAlt: "Headline Studio by CoSchedule",
-// 		caption: "Headline Studio by CoSchedule",
-// 		title: "New Product Sign Up Page",
-// 		body: "The challenge: design & build a high converting product page with sign up for the new Headline Studio app.",
-// 		type: "",
-// 		href: "/work/headline-studio",
-// 	},
-// 	{
-// 		imageSrc: "/images/work/hs-app.png",
-// 		imageAlt: "Headline Studio by CoSchedule",
-// 		caption: "Headline Studio by CoSchedule",
-// 		title: "Feature Education & User Adoption",
-// 		body: "The challenge: help users understand how to use one of the most powerful features in Headline Studio.",
-// 		type: "",
-// 		href: "",
-// 	},
-// ];
-
-//class="group grid gap-y-8 before:absolute before:-inset-x-4 before:-top-4 before:bottom-0 before:z-0 before:border before:border-solid before:border-transparent before:p-4 before:transition before:duration-300 before:ease-in-out hover:before:border-slate-200"
 ---
 
 <LargeContainer>
@@ -46,7 +14,7 @@ import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png
 				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
 			>
 				<img
-					src={hs}
+					src={hsApp}
 					alt="Headline Studio Screenshot"
 					class="mx-auto w-full drop-shadow-2xl"
 				/>
@@ -56,7 +24,7 @@ import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png
 					<h2
 						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
 					>
-						Headline Studio App
+						Headline Studio
 					</h2>
 					<div class="grid gap-y-4">
 						<p class="justify-self-start leading-loose">
@@ -167,37 +135,5 @@ import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png
 				</div>
 			</SmallContainer>
 		</a>
-		<!-- <a href="" class="grid gap-y-8">
-			<div
-				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
-			>
-				<img
-					src={hs}
-					alt="Headline Studio Screenshot"
-					class="mx-auto w-full drop-shadow-2xl"
-				/>
-			</div>
-			<SmallContainer>
-				<div class="grid gap-y-1">
-					<h2
-						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
-					>
-						Headline Studio
-					</h2>
-					<div class="grid gap-y-4">
-						<p class="justify-self-start leading-loose">
-							A powerful tool that can help content creators improve the
-							effectiveness of their headlines and increase engagement with
-							their content.
-						</p>
-						<p class="justify-self-start leading-loose">
-							With the launch of a new app we needed a fresh product page and
-							signup process. I designed & built a low friction, conversion
-							focused landing page.
-						</p>
-					</div>
-				</div>
-			</SmallContainer>
-		</a> -->
 	</div>
 </LargeContainer>

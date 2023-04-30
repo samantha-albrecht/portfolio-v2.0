@@ -1,6 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import hero from "../assets/images/work/cos-website/cos-website-hero.png?url";
+import crux from "../assets/images/work/cos-website/crux.png?url";
+import next from "../assets/images/work/cos-website/next.png?url";
+import hub from "../assets/images/work/cos-website/hub.png?url";
+import googleLogo from "../assets/images/work/cos-website/google-logo-icon.png?url";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
 import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SmallContainer from "../components/foundation/SmallContainer.astro";
@@ -13,7 +17,7 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 		>
 			<div class="mx-auto w-full max-w-7xl">
 				<img
-					src={myChart}
+					src={hero}
 					alt="CoSchedule.com Screenshot"
 					class="mx-auto w-full pb-12 md:pb-8"
 				/>
@@ -131,6 +135,63 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									better experience for their users with faster page loads,
 									improved interactivity, and visual stability.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<figure class="mb-8 mt-16 grid gap-4 md:grid-cols-2">
+								<div
+									class="grid gap-4 border border-solid border-green-600 p-8"
+								>
+									<div class="flex items-center gap-2">
+										<img src={googleLogo} alt="Google logo" class="max-h-8" />
+										<p class="text-xl font-medium">Core Web Vitals</p>
+									</div>
+									<div class="grid gap-2 text-white">
+										<div class="bg-green-600 p-4">
+											<p class="text-lg font-medium">Loading</p>
+											<p class="text-sm leading-loose">
+												Largest Contentful Paint
+											</p>
+										</div>
+										<div class="bg-green-600 p-4">
+											<p class="text-lg font-medium">Interactivity</p>
+											<p class="text-sm leading-loose">First Input Delay</p>
+										</div>
+										<div class="bg-green-600 p-4">
+											<p class="text-lg font-medium">Visual Stability</p>
+											<p class="text-sm leading-loose">
+												Cumulative Layout Shift
+											</p>
+										</div>
+									</div>
+								</div>
+								<div
+									class="grid content-start gap-4 border border-solid border-blue-500 p-8"
+								>
+									<div class="flex h-8 items-center gap-2">
+										<p class="text-xl font-medium">Other Web Vitals</p>
+									</div>
+									<div class="grid gap-2">
+										<div class="bg-blue-100 p-4">
+											<p class="text-lg font-medium">Mobile Friendly</p>
+										</div>
+										<div class="bg-blue-100 p-4">
+											<p class="text-lg font-medium">Safe Browsing</p>
+										</div>
+										<div class="bg-blue-100 p-4">
+											<p class="text-lg font-medium">HTTPS</p>
+										</div>
+										<div class="bg-blue-100 p-4">
+											<p class="text-lg font-medium">
+												No Intrusive Interstitials
+											</p>
+										</div>
+									</div>
+								</div>
+							</figure>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
 									What problem are we solving?
 								</h2>
@@ -142,15 +203,38 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									Web Vitals, which was hurting our search engine rankings and
 									user experience.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={crux}
+								alt="Chrome UX dashboard"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Before</h2>
 								<p>
 									To understand how our website was being experienced by users
 									we used Google's CrUx (Chrome UX) report. The report revealed
-									that 67% of users experienced page load times greater than
-									2.5s, this was hurting use the most, 92% of users experienced
-									good page interactivity, which is not bad, and 20% of users
-									experienced some layout shift or visual disturbance.
+									that more that half of users were experiencing page load times
+									greater than 2.5s, this was hurting us the most. 92% of users
+									were experiencing good page interactivity, which is not bad.
+									And 20% of users were experiencing some layout shift or visual
+									disturbance.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={next}
+								alt="PHP vs Next.js"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Work</h2>
 								<p>
 									To solve these problems, we decided to rewrite the website in
@@ -169,6 +253,17 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									or were simply unnecessary and deleted and implemented
 									redirects for those pages.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={hub}
+								alt="CoSchedule Marketing Hub"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
 									Improvements
 								</h2>

@@ -1,6 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import hero from "../assets/images/work/my-chart/mychart-hero.png?url";
+import wireframe1 from "../assets/images/work/my-chart/wireframe-2.png?url";
+import wireframe2 from "../assets/images/work/my-chart/wireframe-3.png?url";
+import design from "../assets/images/work/my-chart/design-1.png?url";
+import accessibility from "../assets/images/work/my-chart/accessibility.png?url";
+import fonts from "../assets/images/work/my-chart/fonts.png?url";
+import grid from "../assets/images/work/my-chart/grid.png?url";
+import heirarchy from "../assets/images/work/my-chart/heirarchy.png?url";
+import before from "../assets/images/work/my-chart/mychart-before.png?url";
 import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SmallContainer from "../components/foundation/SmallContainer.astro";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
@@ -13,7 +21,7 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 		>
 			<div class="mx-auto w-full max-w-7xl">
 				<img
-					src={myChart}
+					src={hero}
 					alt="MyChart Sign Up Screenshot"
 					class="mx-auto w-full pb-12 md:pb-8"
 				/>
@@ -104,7 +112,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={before}
+								title="Before screenshot"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -154,7 +166,18 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<div class="grid gap-4 pb-8 pt-16 lg:grid-cols-2">
+								<img
+									src={wireframe1}
+									title="Low fidelity wireframe"
+									class="border border-solid border-slate-200"
+								/>
+								<img
+									src={wireframe2}
+									title="Low fidelity wireframe"
+									class="border border-solid border-slate-200"
+								/>
+							</div>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -177,7 +200,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={design}
+								title="High fidelity mockup"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -212,7 +239,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={heirarchy}
+								title="heirarchy"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -255,7 +286,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={grid}
+								title="grid"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -276,7 +311,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={fonts}
+								title="Fonts"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -306,7 +345,11 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<img title="image here" class="pb-8 pt-16" />
+							<img
+								src={accessibility}
+								title="accessibility"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
@@ -331,6 +374,10 @@ import SectionContainer from "../components/foundation/SectionContainer.astro";
 									redesign, there is always room for improvement. It's important
 									to track how the updated sign in page performs over time to
 									identify areas for further refinement.
+								</p>
+								<p class="pt-8 text-sm italic text-slate-600">
+									I am not affiliated with MyChart by Epic in any capacity. The
+									views for this case study are strictly my&nbsp;own.
 								</p>
 							</div>
 						</SmallContainer>

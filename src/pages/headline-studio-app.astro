@@ -1,6 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import hero from "../assets/images/work/hs-app/hs-app-hero.png?url";
+import wireframe1 from "../assets/images/work/hs-app/wireframe-1.png?url";
+import wireframe2 from "../assets/images/work/hs-app/wireframe-2.png?url";
+import wireframe3 from "../assets/images/work/hs-app/wireframe-3.png?url";
+import design1 from "../assets/images/work/hs-app/design-1.png?url";
+import design2 from "../assets/images/work/hs-app/design-2.png?url";
+import design3 from "../assets/images/work/hs-app/design-3.png?url";
+import animation from "../assets/images/work/hs-app/chat-animation.mov?url";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
 import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SmallContainer from "../components/foundation/SmallContainer.astro";
@@ -13,7 +20,7 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 		>
 			<div class="mx-auto w-full max-w-7xl">
 				<img
-					src={myChart}
+					src={hero}
 					alt="Headline Studio Screenshot"
 					class="mx-auto w-full pb-12 md:pb-8"
 				/>
@@ -131,6 +138,31 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									headline writing process and identified opportunities to
 									incorporate those ideas.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<div class="mb-8 mt-16 grid gap-4">
+								<img
+									src={wireframe1}
+									alt="Low fideltiy wireframes"
+									class="border border-solid border-slate-200"
+								/>
+								<div class="grid gap-4 md:grid-cols-2">
+									<img
+										src={wireframe2}
+										alt="Low fideltiy wireframes"
+										class="border border-solid border-slate-200"
+									/>
+									<img
+										src={wireframe2}
+										alt="Low fideltiy wireframes"
+										class="border border-solid border-slate-200"
+									/>
+								</div>
+							</div>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Work</h2>
 								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Wireframes</h3>
 								<p>
@@ -148,6 +180,31 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									communicates a back-and-forth brainstorming tool and provides
 									flexibility for future developments of this feature.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<div class="mb-8 mt-16 grid gap-4">
+								<img
+									src={design1}
+									alt="High fidelity design mockups"
+									class="border border-solid border-slate-200"
+								/>
+								<div class="grid gap-4 md:grid-cols-2">
+									<img
+										src={design2}
+										alt="High fidelity design mockups"
+										class="border border-solid border-slate-200"
+									/>
+									<img
+										src={design3}
+										alt="High fidelity design mockups"
+										class="border border-solid border-slate-200"
+									/>
+								</div>
+							</div>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Design</h3>
 								<p>
 									Designing the prompt and response experience for Headline AI
@@ -178,13 +235,33 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									them to interact with the feature, but are prompted to upgrade
 									to unlock the AI response with generated headlines.
 								</p>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Build</h3>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Build & Launch
+								</h3>
 								<p>
 									At this phase I was responsible for implementing the HTML &
 									CSS for Headline AI. I worked closely with an engineer to
 									complete all necessary backend functionality.
 								</p>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Observe</h3>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<video
+								controls
+								autoplay
+								muted
+								loop
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							>
+								<source src={animation} />
+								Your browser does not support the &lt;video&gt; tag.
+							</video>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Test & Refine
+								</h3>
 								<p>
 									After the initial launch, we observed a couple of areas that
 									needed improvement.
@@ -239,7 +316,9 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<figure class="grid gap-y-4 py-16">
+							<figure
+								class="my-16 grid gap-y-4 border border-solid border-slate-200 p-8 md:p-12 lg:p-16"
+							>
 								<blockquote>
 									<p
 										class="text-xl font-medium leading-normal md:text-2xl md:leading-normal"
