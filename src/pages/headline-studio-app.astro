@@ -1,0 +1,293 @@
+---
+import Layout from "../layouts/Layout.astro";
+import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import SectionContainer from "../components/foundation/SectionContainer.astro";
+import LargeContainer from "../components/foundation/LargeContainer.astro";
+import SmallContainer from "../components/foundation/SmallContainer.astro";
+---
+
+<Layout title="Headline Studio App Case Study">
+	<main>
+		<header
+			class="bg-[#dfe8f9] pb-32 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-56 lg:pt-20"
+		>
+			<div class="mx-auto w-full max-w-7xl">
+				<img
+					src={myChart}
+					alt="Headline Studio Screenshot"
+					class="mx-auto w-full pb-12 md:pb-8"
+				/>
+				<div
+					class="grid gap-y-6 px-4 md:gap-x-8 md:px-0 lg:grid-cols-[3fr_1fr] lg:gap-x-16"
+				>
+					<div class="grid content-start gap-y-2 lg:gap-y-4">
+						<h1
+							class="text-3xl font-medium leading-normal md:text-4xl md:leading-normal lg:text-5xl"
+						>
+							Headline AI in Headline Studio
+						</h1>
+						<p
+							class="text-sm leading-loose md:text-base md:leading-loose lg:text-lg lg:leading-loose"
+						>
+							A case study on the process of designing and building a new
+							feature in the Headline Studio&nbsp;application.
+						</p>
+					</div>
+					<aside
+						class="border-t border-solid border-slate-300 pt-6 text-sm leading-loose text-slate-600 lg:justify-self-end lg:border-0 lg:pt-0 lg:text-base"
+					>
+						<ul class="grid gap-y-2 md:grid-cols-2 md:gap-x-4 lg:grid-cols-1">
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>My role</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Research
+									</li>
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Product design
+									</li>
+									<li>Front-end development</li>
+								</ul>
+							</li>
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>Tools used</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Google docs
+									</li>
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Figma
+									</li>
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										VS Code
+									</li>
+									<li>HTML & SCSS</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</header>
+		<div class="-mt-20 leading-loose lg:-mt-28">
+			<SectionContainer>
+				<LargeContainer>
+					<div class="bg-white px-4 pb-12 pt-4 md:pb-20 md:pt-10">
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p class="lg:text-lg lg:leading-loose">
+									This case study will explore the design and development
+									process behind Headline AI. A powerful feature in Headline
+									Studio that uses Natural Language Processing and other AI
+									techniques to generate a variety of headline styles, tones,
+									and structures to assist in the user’s writing process.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									About Headline Studio
+								</h2>
+								<p>
+									Headline Studio was developed with the goal of helping
+									marketers and content creators improve the effectiveness of
+									their headlines, and ultimately drive more traffic and
+									engagement to their content. The tool combines artificial
+									intelligence and data-driven analysis to provide users with
+									insights on headline performance and SEO optimization. By
+									using Headline Studio, content creators can save time and
+									streamline their writing process, as well as receive valuable
+									feedback on their headline ideas.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									What problem are we solving?
+								</h2>
+								<p>
+									Many content creators struggle with writer's block and finding
+									the right headline angle that will engage their audience. By
+									leveraging AI and machine learning algorithms, Headline Studio
+									solves this problem by providing a user-friendly interface
+									that generates a variety of headline ideas and provides
+									insights on the potential performance of each headline.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Research</h2>
+								<p>
+									Prior to developing Headline AI, I researched other headline
+									AI tools and ready articles about headline writing. I also
+									looked at how people were already leveraging AI in their
+									headline writing process and identified opportunities to
+									incorporate those ideas.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Work</h2>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Wireframes</h3>
+								<p>
+									I delved into various interface options for Headline AI. In
+									addition, I explored the different actions a user could take
+									with the generated headlines, including copying, editing, and
+									analyzing. Ultimately, after careful consideration, our team
+									decided that a chat interface was the most user-friendly and
+									familiar option. For the MVP, we kept the interface simple
+									with just a button to analyze the headline, as additional
+									options would have added unnecessary complexity. The chat
+									interface effectively communicates a back-and-forth
+									brainstorming tool and provides flexibility for future
+									developments of this feature.
+								</p>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Design</h3>
+								<p>
+									Designing the prompt and response experience for Headline AI
+									was a critical step in making the feature intuitive and
+									engaging. Using Figma, I created an interface that seamlessly
+									integrated with the rest of the Headline Studio app.
+								</p>
+								<p>I focused on:</p>
+								<ul class="grid list-disc gap-y-2 pl-8">
+									<li>
+										Formatting responses that were easily readable and scannable
+										for users.
+									</li>
+									<li>
+										Incorporating a Headline Bot persona to communicate with
+										users in a fun, conversational, and bot-like language.
+									</li>
+									<li>
+										Error handling, anticipating and designing for parsing
+										errors and response timeouts.
+									</li>
+								</ul>
+								<p>
+									Headline Studio has free and paid plans. The Headline AI
+									feature is only available to paid users. To give free users a
+									taste of the Headline AI feature and incentivize them to
+									upgrade to the paid plan, we designed the experience to allow
+									them to interact with the feature, but are prompted to upgrade
+									to unlock the AI response with generated headlines.
+								</p>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Build</h3>
+								<p>
+									At this phase I was responsible for implementing the HTML &
+									CSS for Headline AI. I worked closely with an engineer to
+									complete all necessary backend functionality.
+								</p>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Observe</h3>
+								<p>
+									After the initial launch, we observed a couple of areas that
+									needed improvement.
+								</p>
+								<ul class="grid list-disc gap-y-2 pl-8">
+									<li>Initial greeting and prompt animation</li>
+									<li>Response time</li>
+								</ul>
+								<p>
+									First, from watching Hotjar I noticed users leaving before the
+									chat experience had fully animated in. My assumption was that
+									it was not immediately clear to these users what they could do
+									with the feature. We wanted to keep the animation because it
+									communicated to the user the chat-like experience. However I
+									did speed it up so users can see the prompts within less than
+									a second of visiting the AI tab.
+								</p>
+								<p>
+									Second, for our Headline AI analytics dashboard noticed
+									response times were creeping up, causing users to leave before
+									getting a response back. To address these issues, we
+									considered using a different loading indicator that was more
+									informative and made the wait time feel faster. However, we
+									decided to experiment with streaming in responses instead of
+									showing everything all at once. This approach improved the
+									response time and reduced the likelihood of users leaving
+									before getting a full response.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									What I Learned
+								</h2>
+								<p>
+									During the development process of this feature, I had the
+									opportunity to lead ideation and design discussions, which
+									helped me improve my communication and leadership skills.
+								</p>
+								<p>
+									In addition, I experimented with prototypes in Figma, which
+									helped me deepen my knowledge of the tool. By creating a
+									working prototype, I was better able to communicate my ideas
+									to the team and receive useful feedback.
+								</p>
+								<p>
+									While working on this project, I found inspiration in the book <span
+										class="italic">The Design of Everyday Things</span
+									> by Don Norman. Norman emphasizes the importance of designing
+									for failure. This concept resonated with me, as I applied it to
+									ensure that the Headline AI feature would provide users with a
+									seamless experience, even in the event of unexpected errors or
+									delays
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<figure class="grid gap-y-4 py-16">
+								<blockquote>
+									<p
+										class="text-xl font-medium leading-normal md:text-2xl md:leading-normal"
+									>
+										“Designers need to focus their attention on the cases where
+										things go wrong, not just when things work as planned.”
+									</p>
+								</blockquote>
+								<figcaption class="font-mono-space text-sm">
+									- The Design of Everyday Things, Don Norman
+								</figcaption>
+							</figure>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Wrap Up</h2>
+								<p>
+									This feature has proved to be a valuable addition to Headline
+									Studio. By combining the original headline analysis capability
+									with AI, users are able to overcome writer's block and quickly
+									generate fresh ideas and find the right headline angle to
+									engage their audience, while streamlining their writing
+									workflow saving time and effort.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									Acknowledgements
+								</h2>
+								<ul class="grid gap-x-8 md:grid-cols-2">
+									<li>J.Morgan L., Software Engineer</li>
+									<li>Britni S., Project Manager</li>
+								</ul>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Other Collaborators
+								</h3>
+								<ul class="grid gap-x-8 md:grid-cols-2">
+									<li>Garrett M.</li>
+									<li>Justin W.</li>
+									<li>Jon S.</li>
+									<li>Luis V.</li>
+									<li>Nathan E.</li>
+									<li>Shannon W.</li>
+									<li>Tony S.</li>
+								</ul>
+								<p class="pt-8 text-sm italic text-slate-600">
+									Headline Studio is a trademark of CoSchedule. All rights
+									reserved.
+								</p>
+							</div>
+						</SmallContainer>
+					</div>
+				</LargeContainer>
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>

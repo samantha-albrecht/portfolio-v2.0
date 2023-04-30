@@ -63,7 +63,7 @@ const books = [
 <LargeContainer>
 	<div class="grid gap-y-8">
 		<div class="grid gap-y-1">
-			<div class="font-mono-space leading-normal text-gray-600">Books</div>
+			<div class="font-mono-space leading-normal text-slate-600">Books</div>
 			<h2 class="text-4xl font-medium leading-normal">
 				Books I've read & recommend
 			</h2>
@@ -71,8 +71,8 @@ const books = [
 		<ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 			{
 				books.map((book) => (
-					<li role="none" class="border border-solid border-gray-300">
-						<div class="bg-gray-100 p-6 text-center">
+					<li role="none" class="border border-solid border-slate-300">
+						<div class="bg-slate-100 p-6 text-center">
 							<Picture
 								class="mx-auto h-44 rounded-sm"
 								src={book.coverImage}
