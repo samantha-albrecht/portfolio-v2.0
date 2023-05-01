@@ -1,0 +1,139 @@
+---
+import SmallContainer from "./foundation/SmallContainer.astro";
+import LargeContainer from "./foundation/LargeContainer.astro";
+import ami from "../assets/images/work/ami/project-screenshot.png?url";
+import hsApp from "../assets/images/work/hs-app/project-screenshot.png?url";
+import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
+import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png?url";
+---
+
+<LargeContainer>
+	<div class="grid gap-y-16 pb-24">
+		<a href="/headline-studio-app" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={hsApp}
+					alt="Headline Studio Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						Headline Studio
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A tool designed to help content creators improve the effectiveness
+							of their headlines and increase engagement with their content.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Explore the design and development process behind Headline AI, a
+							powerful AI feature in Headline Studio.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="/mychart" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-slate-200 px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={myChart}
+					alt="MyChart Sign Up Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						MyChart by Epic
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							An online patient portal and electronic health record (EHR) system
+							that allows patients to securely access their personal health
+							information from anywhere at any time.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Dive into this case study of the sign in experience, highlighting
+							improvements to the user interface, accessibility, and user
+							experience.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="/coschedule" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#fde5df] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={cosWebsite}
+					alt="CoSchedule.com Homepage Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						CoSchedule.com
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A critical hub for customers and prospects, offering product
+							information and a range of marketing resources. With millions of
+							views each year, it's a vital component of the company's digital
+							strategy.
+						</p>
+						<p class="justify-self-start leading-loose">
+							See how the team rebuilt coschedule.com using a modern technology
+							stack to improve page performance and search engine optimization
+							(SEO).
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+		<a href="/actionable-marketing-institute" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-violet-200 px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={ami}
+					alt="Actionable Marketing Institute Screenshot"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						Actionable Marketing Instititue
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							A library of online resources and training designed to help
+							marketers and business owners improve their skills and knowledge
+							in digital marketing.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Take a closer look at the strategy, tactics, and tools used to
+							create high-performing landing pages for AMI.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
+	</div>
+</LargeContainer>

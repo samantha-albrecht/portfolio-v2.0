@@ -1,0 +1,47 @@
+---
+import LargeContainer from "./foundation/LargeContainer.astro";
+import headshot from "../assets/images/about/headshot-light.jpg?url";
+import SmallContainer from "./foundation/SmallContainer.astro";
+---
+
+<LargeContainer>
+	<div class="grid gap-y-1">
+		<div class="font-mono-space leading-normal text-slate-600">About</div>
+		<h2 class="text-4xl font-medium leading-normal">
+			<!-- What drives great product design -->
+			My design philosophy
+		</h2>
+	</div>
+	<img
+		src={headshot}
+		alt="Samantha Albrecht headshot"
+		class="mx-auto w-full rounded-md pb-16 pt-8"
+	/>
+	<SmallContainer>
+		<div class="grid gap-y-4">
+			<p class="leading-loose">
+				Hi! I'm Samantha, a product designer and developer with over three years
+				of experience shipping work for a growing SaaS startup.
+			</p>
+			<p class="leading-loose">
+				As a product designer, I believe that two key traits are critical to
+				success: curiosity and resilience. My curiosity drives me to ask
+				questions, seek new knowledge, and explore possibilities. It fuels me to
+				uncover user needs and find innovative design solutions to complex
+				problems.
+			</p>
+			<p class="leading-loose">
+				Resilience is crucial in the face of obstacles and setbacks. Product
+				design is a dynamic field, and challenges are a natural part of the
+				process. Resilience allows me to persevere in the face of adversity and
+				keep pushing forward towards a solution.
+			</p>
+			<p class="leading-loose">
+				Together, curiosity and resilience create a powerful combination that
+				helps me navigate the ever-changing landscape of product design. By
+				continuously learning, experimenting, and adapting, I strive to create
+				products that meet the needs of users and drive business success.
+			</p>
+		</div>
+	</SmallContainer>
+</LargeContainer>

@@ -1,0 +1,43 @@
+---
+const footerLinks = [
+	{
+		name: "LinkedIn",
+		href: "https://www.linkedin.com/in/samantha-albrecht-%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-998053156/",
+		title: "Go to LinkedIn",
+	},
+	{
+		name: "Github",
+		href: "https://github.com/samantha-albrecht/portfolio-v2.0",
+		title: "View source on Github",
+	},
+];
+---
+
+<footer
+	class="grid gap-y-4 border-t border-solid border-slate-600 bg-white px-4 py-4 text-xs md:grid-cols-12 md:py-0 lg:px-8 lg:text-sm"
+>
+	<p class="text-center md:col-span-10 md:py-3 md:text-left lg:py-4">
+		Designed &amp; built by Samantha Albrecht &bull; Copyright &#169; {
+			new Date().getUTCFullYear()
+		}
+	</p>
+	<ul
+		class="flex justify-center gap-x-4 md:col-span-2 md:gap-x-0 md:justify-self-end"
+		role="navigation"
+	>
+		{
+			footerLinks.map((link) => (
+				<li role="none">
+					<a
+						href={link.href}
+						title={link.title}
+						rel="noopener noreferrer nofollow"
+						class="block transition duration-300 hover:bg-slate-200 md:px-3 md:py-3 lg:py-4"
+					>
+						{link.name}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</footer>

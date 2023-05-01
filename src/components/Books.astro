@@ -1,0 +1,93 @@
+---
+import { Picture } from "@astrojs/image/components";
+import LargeContainer from "./foundation/LargeContainer.astro";
+import permissionToScrewUp from "../assets/images/books/permission-to-screw-up.jpg";
+import daringGreatly from "../assets/images/books/daring-greatly.jpg";
+import impactPlayers from "../assets/images/books/impact-players.jpg";
+import thePowerOfRegret from "../assets/images/books/the-power-of-regret.jpg";
+import theInfiniteGame from "../assets/images/books/the-infinite-game.jpeg";
+import theDesignOfEverydayThings from "../assets/images/books/the-design-of-everyday-things.jpeg";
+import quiet from "../assets/images/books/quiet.jpg";
+import mansSearchForMeaning from "../assets/images/books/mans-search-for-meaning.jpg";
+import everybodyMatters from "../assets/images/books/everybody-matters.jpg";
+
+const books = [
+	{
+		title: "Permission to Screw Up",
+		author: "Kristen Hadeed",
+		coverImage: permissionToScrewUp,
+	},
+	{
+		title: "Everybody Matters",
+		author: "Bob Chapman & Raj Sisodia",
+		coverImage: everybodyMatters,
+	},
+	{
+		title: "Impact Players",
+		author: "Liz Wiseman",
+		coverImage: impactPlayers,
+	},
+	{
+		title: "Daring Greatly",
+		author: "Brene Brown",
+		coverImage: daringGreatly,
+	},
+	{
+		title: "The Power of Regret",
+		author: "Daniel Pink",
+		coverImage: thePowerOfRegret,
+	},
+	{
+		title: "Quiet",
+		author: "Susan Cain",
+		coverImage: quiet,
+	},
+	{
+		title: "The Infinite Game",
+		author: "Simon Sinek",
+		coverImage: theInfiniteGame,
+	},
+	{
+		title: "The Design of Everyday Things",
+		author: "Don Norman",
+		coverImage: theDesignOfEverydayThings,
+	},
+	{
+		title: "Man's Search for Meaning",
+		author: "Viktor E. Frankl",
+		coverImage: mansSearchForMeaning,
+	},
+];
+---
+
+<LargeContainer>
+	<div class="grid gap-y-8">
+		<div class="grid gap-y-1">
+			<div class="font-mono-space leading-normal text-slate-600">Books</div>
+			<h2 class="text-4xl font-medium leading-normal">
+				Books I've read & recommend
+			</h2>
+		</div>
+		<ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+			{
+				books.map((book) => (
+					<li role="none" class="border border-solid border-slate-300">
+						<div class="bg-slate-100 p-6 text-center">
+							<Picture
+								class="mx-auto h-44 rounded-sm"
+								src={book.coverImage}
+								widths={[200, 400, 800]}
+								sizes="(max-width: 800px) 100vw, 800px"
+								alt={`${book.title} book cover`}
+							/>
+						</div>
+						<div class="grid gap-y-1 p-6">
+							<p class="font-medium leading-normal">{book.title}</p>
+							<p class="text-sm leading-normal">{book.author}</p>
+						</div>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</LargeContainer>

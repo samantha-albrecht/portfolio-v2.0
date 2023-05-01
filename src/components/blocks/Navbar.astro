@@ -1,0 +1,60 @@
+---
+const navLinks = [
+	{
+		name: "Projects",
+		href: "/#projects",
+		title: "See all projects",
+	},
+	{
+		name: "Process",
+		href: "/#process",
+		title: "Learn more about my process",
+	},
+	{
+		name: "About",
+		href: "/#about",
+		title: "Learn more about me",
+	},
+	{
+		name: "Experience",
+		href: "/#experience",
+		title: "Learn more about my experience",
+	},
+	// {
+	// 	name: "Contact",
+	// 	href: "/",
+	// 	title: "See all projects",
+	// },
+];
+---
+
+<nav
+	class="relative grid border-t border-solid border-slate-600 bg-white/70 px-4 text-sm backdrop-blur-md before:absolute before:-top-1 before:block before:h-1 before:w-full before:bg-slate-300 md:grid-cols-12 md:border-b md:border-t-0 lg:px-8"
+>
+	<a
+		href="/"
+		title="Go to homepage"
+		class="hidden md:col-span-3 md:block md:py-3 lg:py-4">Samantha Albrecht</a
+	>
+	<ul
+		class="flex justify-center md:col-span-9 md:justify-end md:gap-x-0 lg:md:col-span-6 lg:justify-center"
+		role="navigation"
+	>
+		{
+			navLinks.map((link) => (
+				<li role="none">
+					<a
+						href={link.href}
+						title={link.title}
+						class="block px-3 py-4 transition duration-300 hover:bg-slate-900 hover:text-white md:py-3 lg:py-4"
+					>
+						{link.name}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+	<p class="hidden lg:col-span-3 lg:block lg:justify-self-end lg:py-4">
+		Product designer & developer
+	</p>
+</nav>

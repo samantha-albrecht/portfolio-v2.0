@@ -1,0 +1,391 @@
+---
+import Layout from "../layouts/Layout.astro";
+import hero from "../assets/images/work/my-chart/mychart-hero.png?url";
+import wireframe1 from "../assets/images/work/my-chart/wireframe-2.png?url";
+import wireframe2 from "../assets/images/work/my-chart/wireframe-3.png?url";
+import design from "../assets/images/work/my-chart/design-1.png?url";
+import accessibility from "../assets/images/work/my-chart/accessibility.png?url";
+import fonts from "../assets/images/work/my-chart/fonts.png?url";
+import grid from "../assets/images/work/my-chart/grid.png?url";
+import heirarchy from "../assets/images/work/my-chart/heirarchy.png?url";
+import before from "../assets/images/work/my-chart/mychart-before.png?url";
+import LargeContainer from "../components/foundation/LargeContainer.astro";
+import SmallContainer from "../components/foundation/SmallContainer.astro";
+import SectionContainer from "../components/foundation/SectionContainer.astro";
+---
+
+<Layout title="MyChart by Epic Case Study">
+	<main>
+		<header
+			class="bg-slate-200 pb-32 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-56 lg:pt-20"
+		>
+			<div class="mx-auto w-full max-w-7xl">
+				<img
+					src={hero}
+					alt="MyChart Sign Up Screenshot"
+					class="mx-auto w-full pb-12 md:pb-8"
+				/>
+				<div
+					class="grid gap-y-6 px-4 md:gap-x-8 md:px-0 lg:grid-cols-[3fr_1fr] lg:gap-x-16"
+				>
+					<div class="grid content-start gap-y-2 lg:gap-y-4">
+						<h1
+							class="text-3xl font-medium leading-normal md:text-4xl md:leading-normal lg:text-5xl"
+						>
+							MyChart by Epic
+						</h1>
+						<p
+							class="text-sm leading-loose md:text-base md:leading-loose lg:text-lg lg:leading-loose"
+						>
+							A case study of the sign in experience, highlighting improvements
+							to the user interface, accessibility, and user&nbsp;experience.
+						</p>
+					</div>
+					<aside
+						class="border-t border-solid border-slate-300 pt-6 text-sm leading-loose text-slate-600 lg:justify-self-end lg:border-0 lg:pt-0 lg:text-base"
+					>
+						<ul class="grid gap-y-2 md:grid-cols-2 lg:grid-cols-1">
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>My role</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Research
+									</li>
+									<li>Product design</li>
+								</ul>
+							</li>
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>Tools used</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Google Docs
+									</li>
+									<li>Figma</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</header>
+		<div class="-mt-20 leading-loose lg:-mt-28">
+			<SectionContainer>
+				<LargeContainer>
+					<div class="bg-white px-4 pb-12 pt-4 md:pb-20 md:pt-10">
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p class="lg:text-lg lg:leading-loose">
+									As the healthcare industry embraces technology to connect with
+									patients, how can the experience be&nbsp;improved?
+								</p>
+								<p class="lg:text-lg lg:leading-loose">
+									The objective of this UX/UI case study is to evaluate and
+									improve the user experience of the MyChart
+									healthcare&nbsp;app.
+								</p>
+								<p class="lg:text-lg lg:leading-loose">
+									The study focuses on analyzing and redesigning the login page
+									based on research insights and best design practices. The
+									project aims to create a user-centered design that enhances
+									the app's usability, accessibility, and visual appeal while
+									aligning with the brand's guidelines and&nbsp;requirements.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									About MyChart
+								</h2>
+								<p>
+									MyChart by Epic is a web portal that allows patients to manage
+									all their healthcare needs. With MyChart patients can access
+									health information including: medications, test results,
+									upcoming appointments, medical bills, and price estimates.
+									Additionally, patients are able to schedule appointments,
+									contact their care team via secure messaging, and connect with
+									their provider via a virtual&nbsp;visit.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={before}
+								title="Before screenshot"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									App Analysis
+								</h2>
+								<p>
+									The login page of MyChart has several design inconsistencies
+									that affect its usability. First, the button style is
+									inconsistent, with varying font weight, background color,
+									size, and border radius. Second, the primary action for this
+									page is unclear due to too many buttons and a lack of
+									hierarchy. Third, the low contrast is a problem for
+									accessibility, as everything is a shade of blue or gray.
+									Finally, the page elements are misaligned making the page
+									feel&nbsp;cluttered.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Research</h2>
+								<p>
+									To gain insights into MyChart's user experience, I usedG2
+									Crowd reviews to provided valuable feedback from real users.
+									This research helped me to identify some common pain points,
+									strengths, and weaknesses of the app, which informed my design
+									decisions throughout this case&nbsp;study.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Personas</h2>
+								<p>
+									I found it intriguing to redesign a healthcare app because of
+									the diverse user base to consider. The app must be accessible
+									and user-friendly for all ages, abilities, and&nbsp;cultures.
+								</p>
+								<p>
+									It challenged me to think about users who may have limited
+									experience with technology or those with disabilities, such as
+									visual or hearing impairments. Additionally, healthcare apps
+									serve a diverse demographic,including individuals from
+									different ethnic and cultural backgrounds, speaking different
+									languages, and having varying levels of health&nbsp;literacy.
+								</p>
+								<h2>User Flow</h2>
+								<p>
+									To access the MyChart login page on a desktop involves
+									navigating to the healthcare provider's website, finding the
+									MyChart login button or link, and entering login credentials
+									or creating a new account if&nbsp;necessary.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<div class="grid gap-4 pb-8 pt-16 lg:grid-cols-2">
+								<img
+									src={wireframe1}
+									title="Low fidelity wireframe"
+									class="border border-solid border-slate-200"
+								/>
+								<img
+									src={wireframe2}
+									title="Low fidelity wireframe"
+									class="border border-solid border-slate-200"
+								/>
+							</div>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									Low Fidelity Wireframes
+								</h2>
+								<p>
+									After conducting user research, I began the design process by
+									creating low-fidelity wireframes. I explored different design
+									concepts, including a stripped-down version as well as a
+									version with all the information but organizing it in a way
+									that clearly communicates the primary action and purpose of
+									the&nbsp;page.
+								</p>
+								<p>
+									This process allowed me to iterate quickly and efficiently
+									while ensuring that the final design would meet the needs of
+									the app's diverse user&nbsp;base.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={design}
+								title="High fidelity mockup"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									High Fidelity Mockups
+								</h2>
+								<p>
+									After iterating through different low-fidelity wireframes, I
+									moved on to creating high-fidelity mockups of the login page.
+									With a clearer understanding of the primary action and purpose
+									of the page, I was able to add visual design elements such as
+									typography, color, and imagery that would enhance the
+									user&nbsp;experience.
+								</p>
+								<p>
+									While the high-fidelity mockups represent a significant
+									improvement over the original login page design, further
+									testing and iteration would be ideal. A/B testing or gathering
+									more feedback from users would help to ensure that the
+									redesigned login page effectively meets the needs of all users
+									and achieves its intended&nbsp;purpose.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									Design Decisions
+								</h2>
+								<p>
+									When designing the MyChart login page, I focused on
+									establishing a clear element hierarchy to help users navigate
+									the page and complete the desired action. Let’s take a closer
+									look at the form&nbsp;elements.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={heirarchy}
+								title="heirarchy"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Heirarchy</h3>
+								<p>The four main groups that make up the form are:</p>
+								<ul class="grid list-disc gap-y-2 pl-8">
+									<li>
+										<span class="font-medium">Context:</span> This group includes
+										the page title and other contextual elements that help users
+										understand what the page is for and what they can expect to&nbsp;accomplish.
+									</li>
+									<li>
+										<span class="font-medium">Form Inputs:</span> This group includes
+										all the fields that users need to fill in to complete the primary
+										action, such as email and password&nbsp;fields
+									</li>
+									<li>
+										<span class="font-medium">Actions:</span> This group includes
+										the primary action button that allows users to move forward,
+										as well as a secondary action that allows users to switch to
+										a different option, in this case, signing&nbsp;in.
+									</li>
+									<li>
+										<span class="font-medium">Links:</span> This group includes any
+										secondary actions or resources that users may need at this stage
+										of the login&nbsp;process.
+									</li>
+								</ul>
+								<p>
+									To make it easier for users to process each of these groups
+									individually, they are separated into distinct divisions with
+									clear visual&nbsp;hierarchy.
+								</p>
+								<p>
+									*Note: I did not include a password field. Based on user
+									feedback it was clear they struggled with the sign in process
+									using a User ID and password. Therefore, I propose using a
+									passwordless authentication sign&nbsp;in.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={grid}
+								title="grid"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Grid</h3>
+								<p>
+									I prioritized consistency and alignment by using an 8-point
+									grid system. All spacing is a multiple of the base number.
+									This approach ensures that all elements on the page have a
+									consistent and harmonious relationship to one&nbsp;another.
+								</p>
+								<p>
+									To maintain the rule of proximity, I ensured that the spacing
+									between elements followed the grid system. This meant that
+									elements that belonged together, such as those within a
+									hierarchy group, were spaced closer together than elements
+									that were separate, such as the hierarchy
+									groups&nbsp;themselves.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={fonts}
+								title="Fonts"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Fonts</h3>
+								<p>
+									I aimed to create a clear hierarchy and improve on-screen
+									readability using one font family, two font weights, and four
+									font&nbsp;sizes.
+								</p>
+								<ul class="grid list-disc gap-y-2 pl-8">
+									<li>
+										<span class="font-medium">Font Family: Source Sans Pro</span
+										>, a popular sans-serif typeface known for its legibility
+										on&nbsp;screens
+									</li>
+									<li>
+										<span class="font-medium"
+											>Font Weight: Regular and Semibold</span
+										>, distinguish between headings and body&nbsp;text
+									</li>
+									<li>
+										<span class="font-medium">Font Size: 16, 18, 20, 36</span>,
+										larger sizes used for headings and buttons help them
+										stand&nbsp;out
+									</li>
+								</ul>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={accessibility}
+								title="accessibility"
+								class="mb-8 mt-16 border border-solid border-slate-200"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Accessibility
+								</h3>
+								<p>
+									I prioritized accessibility and ensured all page elements met
+									minimum contrast&nbsp;requirements.
+								</p>
+								<p>
+									In addition to meeting accessibility guidelines, I aimed to
+									use clear and concise language throughout the form element to
+									avoid confusion and help users quickly understand the purpose
+									and primary action of the&nbsp;page.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									To Wrap Up
+								</h2>
+								<p>
+									Of course design is never done. Even after implementing this
+									redesign, there is always room for improvement. It's important
+									to track how the updated sign in page performs over time to
+									identify areas for further&nbsp;refinement.
+								</p>
+								<p class="pt-8 text-sm italic text-slate-600">
+									I am not affiliated with MyChart by Epic in any capacity. The
+									views for this case study are strictly my&nbsp;own.
+								</p>
+							</div>
+						</SmallContainer>
+					</div>
+				</LargeContainer>
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>

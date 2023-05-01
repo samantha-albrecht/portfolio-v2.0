@@ -1,81 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import LargeContainer from "../components/foundation/LargeContainer.astro";
+import SectionContainer from "../components/foundation/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
+import Process from "../components/Process.astro";
+import About from "../components/About.astro";
+import Books from "../components/Books.astro";
+import Experience from "../components/Experience.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+<Layout title="Samantha Albrecht">
+	<main class="grid">
+		<SectionContainer>
+			<LargeContainer>
+				<h1
+					class="pb-10 pt-8 text-3xl font-medium leading-normal md:pb-10 md:pt-14 md:text-5xl md:leading-normal lg:pb-12 lg:pt-20 lg:text-6xl lg:leading-normal"
+					id="projects"
+				>
+					Solving complex problems with intuitive design solutions
+				</h1>
+			</LargeContainer>
+		</SectionContainer>
+		<SectionContainer>
+			<Projects />
+		</SectionContainer>
+		<SectionContainer bgColor="bg-slate-100">
+			<div class="py-24" id="process">
+				<Process />
+			</div>
+		</SectionContainer>
+		<SectionContainer bgColor="bg-slate-800">
+			<LargeContainer>
+				<figure class="grid gap-y-4 py-16 text-white">
+					<blockquote>
+						<p class="text-xl leading-normal md:text-2xl md:leading-normal">
+							I always look forward to seeing the creative & functional designs
+							Samantha comes up with. She's great at taking in feedback and
+							iterating as&nbsp;needed.
+						</p>
+					</blockquote>
+					<figcaption class="font-mono-space text-sm">
+						– Anonymous peer review
+					</figcaption>
+				</figure>
+			</LargeContainer>
+		</SectionContainer>
+
+		<SectionContainer>
+			<div class="py-24" id="about">
+				<About />
+			</div>
+		</SectionContainer>
+
+		<SectionContainer bgColor="bg-slate-100">
+			<div class="py-24" id="experience">
+				<Experience />
+			</div>
+		</SectionContainer>
+		<SectionContainer>
+			<div class="py-24">
+				<Books />
+			</div>
+		</SectionContainer>
+		<SectionContainer bgColor="bg-slate-800">
+			<LargeContainer>
+				<figure class="grid gap-y-4 py-16 text-white">
+					<blockquote>
+						<p class="text-xl leading-normal md:text-2xl md:leading-normal">
+							Samantha does an incredible job paying attention to all the
+							details & big picture goals for projects. The projects she ships
+							are always done with care, passion, and&nbsp;quality.
+						</p>
+					</blockquote>
+					<figcaption class="font-mono-space text-sm">
+						– Anonymous peer review
+					</figcaption>
+				</figure>
+			</LargeContainer>
+		</SectionContainer>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
