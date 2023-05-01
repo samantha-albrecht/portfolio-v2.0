@@ -29,7 +29,7 @@ const navLinks = [
 ---
 
 <nav
-	class="relative grid border-t border-solid border-slate-600 bg-white/70 px-4 py-4 text-sm backdrop-blur-md before:absolute before:-top-1 before:block before:h-1 before:w-full before:bg-slate-300 md:grid-cols-12 md:border-b md:border-t-0 md:py-0 lg:px-8"
+	class="relative grid border-t border-solid border-slate-600 bg-white/70 px-4 text-sm backdrop-blur-md before:absolute before:-top-1 before:block before:h-1 before:w-full before:bg-slate-300 md:grid-cols-12 md:border-b md:border-t-0 lg:px-8"
 >
 	<a
 		href="/"
@@ -37,7 +37,7 @@ const navLinks = [
 		class="hidden md:col-span-3 md:block md:py-3 lg:py-4">Samantha Albrecht</a
 	>
 	<ul
-		class="flex justify-center gap-x-4 md:col-span-9 md:justify-end md:gap-x-0 lg:md:col-span-6 lg:justify-center"
+		class="flex justify-center md:col-span-9 md:justify-end md:gap-x-0 lg:md:col-span-6 lg:justify-center"
 		role="navigation"
 	>
 		{
@@ -46,7 +46,7 @@ const navLinks = [
 					<a
 						href={link.href}
 						title={link.title}
-						class="block transition duration-300 hover:bg-slate-900 hover:text-white md:px-3 md:py-3 lg:py-4"
+						class="block px-3 py-4 transition duration-300 hover:bg-slate-900 hover:text-white md:py-3 lg:py-4"
 					>
 						{link.name}
 					</a>
