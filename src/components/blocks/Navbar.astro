@@ -20,11 +20,11 @@ const navLinks = [
 		href: "/#experience",
 		title: "Learn more about my experience",
 	},
-	// {
-	// 	name: "Contact",
-	// 	href: "/",
-	// 	title: "See all projects",
-	// },
+	{
+		name: "Contact",
+		href: "mailto:hello@samanthaalbrecht.com",
+		title: "Contact Samantha",
+	},
 ];
 ---
 
@@ -42,7 +42,7 @@ const navLinks = [
 	>
 		{
 			navLinks.map((link) => (
-				<li role="none">
+				<li role="none" class="last-of-type:hidden md:last-of-type:block">
 					<a
 						href={link.href}
 						title={link.title}
