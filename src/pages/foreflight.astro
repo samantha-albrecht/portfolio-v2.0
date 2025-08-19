@@ -1,0 +1,341 @@
+---
+import Layout from "../layouts/Layout.astro";
+import hero from "../assets/images/work/foreflight/ff-hero.png?url";
+import versions from "../assets/images/work/foreflight/versions.png?url";
+import tip from "../assets/images/work/foreflight/final-1.png?url";
+import feedback from "../assets/images/work/foreflight/feedback.png?url";
+import screens1 from "../assets/images/work/foreflight/screens-1.png?url";
+import screens2 from "../assets/images/work/foreflight/screens-2.png?url";
+import specs from "../assets/images/work/foreflight/specs.png?url";
+import SectionContainer from "../components/foundation/SectionContainer.astro";
+import LargeContainer from "../components/foundation/LargeContainer.astro";
+import SmallContainer from "../components/foundation/SmallContainer.astro";
+---
+
+<Layout title="ForeFlight Feature First Run Case Study">
+	<main>
+		<header
+			class="bg-[#f2f4f6] pb-32 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-56 lg:pt-20"
+		>
+			<div class="mx-auto w-full max-w-7xl">
+				<img
+					src={hero}
+					alt="Headline Studio Screenshot"
+					class="mx-auto w-full pb-12 md:pb-8"
+				/>
+				<div
+					class="grid gap-y-6 px-4 md:gap-x-8 md:px-0 lg:grid-cols-[3fr_1fr] lg:gap-x-16"
+				>
+					<div class="grid content-start gap-y-2 lg:gap-y-4">
+						<h1
+							class="text-3xl font-medium leading-normal md:text-4xl md:leading-normal lg:text-5xl"
+						>
+							Guiding Pilots Through Change: Designing ForeFlight’s First
+							Feature Onboarding Flow
+						</h1>
+						<p
+							class="text-sm leading-loose md:text-base md:leading-loose lg:text-lg lg:leading-loose"
+						>
+							Introducing the Aeronautical Drawer with a seamless first-run
+							experience that improved understanding, reduced support requests,
+							and set the foundation for future feature&nbsp;launches.
+						</p>
+					</div>
+					<aside
+						class="border-t border-solid border-slate-300 pt-6 text-sm leading-loose text-slate-600 lg:justify-self-end lg:border-0 lg:pt-0 lg:text-base"
+					>
+						<ul class="grid gap-y-2 md:grid-cols-2 md:gap-x-4 lg:grid-cols-1">
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>My role</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Product design
+									</li>
+									<li>Research</li>
+								</ul>
+							</li>
+							<li>
+								<span class="font-medium lg:text-base lg:leading-loose"
+									>Tools used</span
+								>
+								<ul class="flex flex-wrap items-baseline gap-x-2">
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Google Meets
+									</li>
+									<li
+										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
+									>
+										Google Docs
+									</li>
+									<li>Figma</li>
+								</ul>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</header>
+		<div class="-mt-20 leading-loose lg:-mt-28">
+			<SectionContainer>
+				<LargeContainer>
+					<div class="bg-white px-4 pb-12 pt-4 md:pb-20 md:pt-10">
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p class="lg:text-lg lg:leading-loose">
+									For the launch of ForeFlight’s new Aeronautical Drawer, we
+									needed to create an onboarding experience that would guide
+									users through the changes without disrupting their workflow.
+									This was the first time ForeFlight implemented a first-run
+									experience, and our goal was to help pilots quickly understand
+									the update while minimizing confusion and reducing
+									support&nbsp;inquiries.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									About ForeFlight
+								</h2>
+								<p>
+									ForeFlight is the leading aviation app that provides pilots
+									with comprehensive flight planning tools, real-time weather
+									information, and interactive maps. The app helps pilots
+									navigate safely and efficiently, offering an array of
+									aeronautical charts and features that are critical for flight
+									planning and in-flight&nbsp;navigation.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									What problem are we solving?
+								</h2>
+								<p>
+									ForeFlight’s team was introducing a new feature, the
+									Aeronautical Drawer, to improve user experience. This feature
+									reorganized the aeronautical layer quick filters and settings
+									to reduce map clutter, increase screen real estate, and
+									streamline settings management. The challenge was to
+									communicate these changes to current users effectively, while
+									reducing confusion and minimizing support&nbsp;requests.
+								</p>
+								<p>
+									The goal was to create a first-run experience (a feature that
+									ForeFlight had not used before for feature launches) to inform
+									users about the updates and help them understand how to use
+									the new Aeronautical Drawer. Additionally, it was important
+									that the experience be seamless, without disrupting the
+									user's&nbsp;workflow.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Approach</h2>
+								<p>
+									To craft the first-run experience, we considered
+									several&nbsp;approaches.
+								</p>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Research & Inspiration
+								</h3>
+								<p>
+									A few months prior Apple released “TipKit.” TipKit allows
+									developers to show contextual tips that highlight new,
+									interesting, or unused features. Building on exploratory work
+									my teammate Alejandro had done with in-app tips, I extended
+									this approach to create a tailored onboarding solution for the
+									Aeronautical Drawer.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={versions}
+								alt="3 versions of feature onboarding"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Iteration & Exploration
+								</h3>
+								<p>
+									To find the best possible solution we experimented with
+									various formats, including:
+								</p>
+								<ul class="grid list-disc gap-y-2 pl-8">
+									<li>
+										A single screen calling out important features of the
+										aeronautical drawer (above image right)
+									</li>
+									<li>
+										A single tip, with all the updates (above image middle)
+									</li>
+									<li>
+										A multi-step modal, highlighting the individual parts of the
+										aeronautical drawer (above image left)
+									</li>
+									<li>A contextual, multi-step walkthrough using tips</li>
+									<li>An in-app intro video</li>
+								</ul>
+								<p>
+									A key challenge with most of these options was that they
+									removed users from the context of the app, which led to a
+									disjointed experience. After feedback from pilots and internal
+									testing, the design was&nbsp;refined.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={tip}
+								alt="Aeronautical Drawer first-run tip"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Solution</h2>
+								<p>
+									Our solution was a hybrid approach. Triggered when the user
+									enables the Aeronautical layer, a single tip is used to make
+									users aware of the updated feature. The tip included a call to
+									action for the user to learn&nbsp;more.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={screens1}
+								alt="First run experience screens"
+								class="mb-8 mt-16"
+							/>
+							<img
+								src={screens2}
+								alt="First run experience screens"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p>
+									If a user opted in, they would be taken through a series of
+									screens explaining the new interface and how to use the
+									Aeronautical Drawer elements.
+								</p>
+								<p>
+									Navigation buttons allowed users to move forward or backward
+									between screens.
+								</p>
+								<p>
+									A close button at the top of the screen allowed the user to
+									exit the experience at any time.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									Considerations & Constraints
+								</h2>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									User Context & Conditions
+								</h3>
+								<p>
+									Not only do pilots use our app for planning on the ground, it
+									is also used in flight. Therefore it is critical not to
+									interrupt users who are flying. The first-run experience was
+									designed to show only if a user is not in flight.
+								</p>
+								<p>
+									Additionally the experience would only appear if the
+									Aeronautical layer was enabled, as it is able to use Maps
+									without the Aeronautical layer.
+								</p>
+								<p>
+									Finally, this was only shown to current customers, as a new
+									user would not know the difference between the old
+									aeronautical layer filters and settings and the new
+									experience.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img src={specs} alt="Tip design specs" class="mb-8 mt-16" />
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									Developent Specs
+								</h3>
+								<p>
+									Detailed design specs were provided for the development team,
+									ensuring smooth handoff and implementation.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Impact</h2>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Engagement</h3>
+								<p>
+									Most users completed the first-run experience, ensuring they
+									understood the changes and how to use the new&nbsp;feature.
+								</p>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									User Group Feedback
+								</h3>
+								<p>
+									Many users in the ForeFlight User Group on Facebook suggested
+									we implement this type of experience for other feature
+									releases. This positive reception indicated that users
+									appreciated the clarity provided by the onboarding&nbsp;flow.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={feedback}
+								alt="Facebook user group posts with feature feedback"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Support Reduction
+							</h3>
+							<p>
+								There was a notable reduction in support inquiries related to
+								the Aeronautical Drawer, suggesting that the first-run
+								experience successfully reduced&nbsp;confusion.
+							</p>
+							<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+								Learnings & Next Steps
+							</h2>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Scaling the Experience
+							</h3>
+							<p>
+								Moving forward, we plan to implement the first-run tips for
+								other feature launches. However, we must consider how to avoid
+								overwhelming users with too many tips. A management system for
+								feature tips would be essential to strike the
+								right&nbsp;balance.
+							</p>
+							<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+								Acknowledgements
+							</h2>
+							<ul class="grid gap-x-8 md:grid-cols-2">
+								<li>Jesse C., Software Engineer</li>
+								<li>Josh T., Director of International Growth</li>
+							</ul>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Other Collaborators
+							</h3>
+							<ul class="grid gap-x-8 md:grid-cols-2">
+								<li>Don J.</li>
+								<li>Jason S.</li>
+								<li>Sam T.</li>
+								<li>Alejandro V.</li>
+							</ul>
+							<p class="pt-8 text-sm italic text-slate-600">
+								ForeFlight Mobile EFB is a property of ForeFlight. All
+								rights&nbsp;reserved.
+							</p>
+						</SmallContainer>
+					</div>
+				</LargeContainer>
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>
