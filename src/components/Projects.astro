@@ -3,12 +3,45 @@ import SmallContainer from "./foundation/SmallContainer.astro";
 import LargeContainer from "./foundation/LargeContainer.astro";
 import ami from "../assets/images/work/ami/project-screenshot.png?url";
 import hsApp from "../assets/images/work/hs-app/project-screenshot.png?url";
+import foreflight from "../assets/images/work/foreflight/project-screenshot.png?url";
 import myChart from "../assets/images/work/my-chart/project-screenshot.png?url";
 import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png?url";
 ---
 
 <LargeContainer>
 	<div class="grid gap-y-16 pb-24">
+		<a href="/foreflight" class="grid gap-y-8">
+			<div
+				class="overflow-hidden bg-[#f2f4f6] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
+			>
+				<img
+					src={foreflight}
+					alt="ForeFlight"
+					class="mx-auto w-full drop-shadow-2xl"
+				/>
+			</div>
+			<SmallContainer>
+				<div class="grid gap-y-1">
+					<h2
+						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
+					>
+						ForeFlight
+					</h2>
+					<div class="grid gap-y-4">
+						<p class="justify-self-start leading-loose">
+							The leading aviation app, equipping pilots with comprehensive
+							flight planning and in-flight navigation tools to help them fly
+							safely and efficiently.
+						</p>
+						<p class="justify-self-start leading-loose">
+							Discover how ForeFlight’s first onboarding flow improved user
+							adoption, reduced support questions, and set the foundation for
+							future feature launches.
+						</p>
+					</div>
+				</div>
+			</SmallContainer>
+		</a>
 		<a href="/headline-studio-app" class="grid gap-y-8">
 			<div
 				class="overflow-hidden bg-[#dfe8f9] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
@@ -25,36 +58,6 @@ import cosWebsite from "../assets/images/work/cos-website/project-screenshot.png
 						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
 					>
 						Headline Studio
-					</h2>
-					<div class="grid gap-y-4">
-						<p class="justify-self-start leading-loose">
-							A tool designed to help content creators improve the effectiveness
-							of their headlines and increase engagement with their content.
-						</p>
-						<p class="justify-self-start leading-loose">
-							Explore the design and development process behind Headline AI, a
-							powerful AI feature in Headline Studio.
-						</p>
-					</div>
-				</div>
-			</SmallContainer>
-		</a>
-		<a href="/foreflight" class="grid gap-y-8">
-			<div
-				class="overflow-hidden bg-[#d5eaf8] px-6 pt-4 transition duration-300 ease-in-out hover:scale-102 md:px-10 md:pt-8"
-			>
-				<img
-					src={hsApp}
-					alt="ForeFlight"
-					class="mx-auto w-full drop-shadow-2xl"
-				/>
-			</div>
-			<SmallContainer>
-				<div class="grid gap-y-1">
-					<h2
-						class="justify-self-start text-2xl font-medium leading-normal md:text-4xl md:leading-normal"
-					>
-						ForeFlight
 					</h2>
 					<div class="grid gap-y-4">
 						<p class="justify-self-start leading-loose">

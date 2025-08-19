@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import hero from "../assets/images/work/hs-app/hs-app-hero.png?url";
-import wireframe1 from "../assets/images/work/hs-app/wireframe-1.png?url";
-import wireframe2 from "../assets/images/work/hs-app/wireframe-2.png?url";
-import wireframe3 from "../assets/images/work/hs-app/wireframe-3.png?url";
-import design1 from "../assets/images/work/hs-app/design-1.png?url";
-import design2 from "../assets/images/work/hs-app/design-2.png?url";
-import design3 from "../assets/images/work/hs-app/design-3.png?url";
-import animation from "../assets/images/work/hs-app/chat-animation.mov?url";
+import hero from "../assets/images/work/foreflight/ff-hero.png?url";
+import versions from "../assets/images/work/foreflight/versions.png?url";
+import tip from "../assets/images/work/foreflight/final-1.png?url";
+import feedback from "../assets/images/work/foreflight/feedback.png?url";
+import screens1 from "../assets/images/work/foreflight/screens-1.png?url";
+import screens2 from "../assets/images/work/foreflight/screens-2.png?url";
+import specs from "../assets/images/work/foreflight/specs.png?url";
 import SectionContainer from "../components/foundation/SectionContainer.astro";
 import LargeContainer from "../components/foundation/LargeContainer.astro";
 import SmallContainer from "../components/foundation/SmallContainer.astro";
@@ -16,7 +15,7 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 <Layout title="ForeFlight Feature First Run Case Study">
 	<main>
 		<header
-			class="bg-[#d5eaf8] pb-32 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-56 lg:pt-20"
+			class="bg-[#f2f4f6] pb-32 pt-8 md:px-10 md:pb-32 md:pt-16 lg:pb-56 lg:pt-20"
 		>
 			<div class="mx-auto w-full max-w-7xl">
 				<img
@@ -31,13 +30,15 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 						<h1
 							class="text-3xl font-medium leading-normal md:text-4xl md:leading-normal lg:text-5xl"
 						>
-							ForeFlight Feature Onboarding
+							Guiding Pilots Through Change: Designing ForeFlight’s First
+							Feature Onboarding Flow
 						</h1>
 						<p
 							class="text-sm leading-loose md:text-base md:leading-loose lg:text-lg lg:leading-loose"
 						>
-							A project summary on the process of designing and building an
-							AI-powered feature in the Headline Studio&nbsp;app.
+							Introducing the Aeronautical Drawer with a seamless first-run
+							experience that improved understanding, reduced support requests,
+							and set the foundation for future feature&nbsp;launches.
 						</p>
 					</div>
 					<aside
@@ -52,14 +53,9 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									<li
 										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
 									>
-										Research
-									</li>
-									<!-- <li
-										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
-									>
 										Product design
-									</li> -->
-									<li>Product design</li>
+									</li>
+									<li>Research</li>
 								</ul>
 							</li>
 							<li>
@@ -70,13 +66,13 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									<li
 										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
 									>
-										Google Docs
+										Google Meets
 									</li>
-									<!-- <li
+									<li
 										class="flex items-center gap-x-2 after:inline-block after:h-1 after:w-1 after:rounded-sm after:bg-slate-600"
 									>
-										Figma
-									</li> -->
+										Google Docs
+									</li>
 									<li>Figma</li>
 								</ul>
 							</li>
@@ -92,19 +88,20 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 						<SmallContainer>
 							<div class="grid gap-y-4">
 								<p class="lg:text-lg lg:leading-loose">
-									For the launch of ForeFlight's new Aeronautical Drawer
-									feature, we needed to create an effective onboarding
-									experience to guide users through the changes. This was our
-									first time implementing a first-run experience, and we sought
-									a solution that would improve user understanding while
-									minimizing confusion and support&nbsp;inquiries.
+									For the launch of ForeFlight’s new Aeronautical Drawer, we
+									needed to create an onboarding experience that would guide
+									users through the changes without disrupting their workflow.
+									This was the first time ForeFlight implemented a first-run
+									experience, and our goal was to help pilots quickly understand
+									the update while minimizing confusion and reducing
+									support&nbsp;inquiries.
 								</p>
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
 									About ForeFlight
 								</h2>
 								<p>
-									ForeFlight is a leading aviation app that provides pilots with
-									comprehensive flight planning tools, real-time weather
+									ForeFlight is the leading aviation app that provides pilots
+									with comprehensive flight planning tools, real-time weather
 									information, and interactive maps. The app helps pilots
 									navigate safely and efficiently, offering an array of
 									aeronautical charts and features that are critical for flight
@@ -117,10 +114,10 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									ForeFlight’s team was introducing a new feature, the
 									Aeronautical Drawer, to improve user experience. This feature
 									reorganized the aeronautical layer quick filters and settings
-									to reduce map clutter, increase real estate, and streamline
-									settings management. The challenge was to communicate these
-									changes to current users effectively, while reducing confusion
-									and minimizing support&nbsp;requests.
+									to reduce map clutter, increase screen real estate, and
+									streamline settings management. The challenge was to
+									communicate these changes to current users effectively, while
+									reducing confusion and minimizing support&nbsp;requests.
 								</p>
 								<p>
 									The goal was to create a first-run experience (a feature that
@@ -139,196 +136,135 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									Research & Inspiration
 								</h3>
 								<p>
-									Inspired by Apple’s “tips” feature and Alejandro’s earlier
-									work experimenting with in-app tips, we sought a solution that
-									was as clear and simple as&nbsp;possible.
+									A few months prior Apple released “TipKit.” TipKit allows
+									developers to show contextual tips that highlight new,
+									interesting, or unused features. Building on exploratory work
+									my teammate Alejandro had done with in-app tips, I extended
+									this approach to create a tailored onboarding solution for the
+									Aeronautical Drawer.
 								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={versions}
+								alt="3 versions of feature onboarding"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
 								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
 									Iteration & Exploration
 								</h3>
 								<p>
-									A key challenge with some of these options was that they
-									removed users from the context of the app, which led to a
-									disjointed experience. After feedback from pilots and internal
-									testing, we refined our&nbsp;approach.
+									To find the best possible solution we experimented with
+									various formats, including:
 								</p>
-								<p>
-									Mobile devices were the primary platform, so we designed the
-									first-run experience with a small screen in mind. However, we
-									encountered additional challenges on the iPad due to the
-									larger screen and more spaced-out elements, which made it
-									easier for users to miss key&nbsp;information.
-								</p>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
-									User Context & Conditions
-								</h3>
-								<p>We took into account specific conditions:</p>
 								<ul class="grid list-disc gap-y-2 pl-8">
 									<li>
-										The user must be connected to the internet and not currently
-										flying.
+										A single screen calling out important features of the
+										aeronautical drawer (above image right)
 									</li>
 									<li>
-										Only current customers would see the first-run experience,
-										as new users wouldn’t have experienced the previous feature
-										setup.
+										A single tip, with all the updates (above image middle)
 									</li>
 									<li>
-										Inline tips in the settings menu notified users about the
-										move of the Aeronautical Settings.
+										A multi-step modal, highlighting the individual parts of the
+										aeronautical drawer (above image left)
 									</li>
+									<li>A contextual, multi-step walkthrough using tips</li>
+									<li>An in-app intro video</li>
 								</ul>
+								<p>
+									A key challenge with most of these options was that they
+									removed users from the context of the app, which led to a
+									disjointed experience. After feedback from pilots and internal
+									testing, the design was&nbsp;refined.
+								</p>
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<div class="mb-8 mt-16 grid gap-4">
-								<img
-									src={wireframe1}
-									alt="Low fideltiy wireframes"
-									class="border border-solid border-slate-200"
-								/>
-								<div class="grid gap-4 md:grid-cols-2">
-									<img
-										src={wireframe2}
-										alt="Low fideltiy wireframes"
-										class="border border-solid border-slate-200"
-									/>
-									<img
-										src={wireframe3}
-										alt="Low fideltiy wireframes"
-										class="border border-solid border-slate-200"
-									/>
-								</div>
-							</div>
+							<img
+								src={tip}
+								alt="3 versions of feature onboarding"
+								class="mb-8 mt-16"
+							/>
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Solution</h2>
-								<!-- <h3 class="pt-8 text-xl font-medium lg:text-2xl">Wireframes</h3>
 								<p>
-									I delved into various interface options for Headline AI. In
-									addition, I explored the different actions a user could take
-									with the generated headlines, including copying, editing, and
-									analyzing. Ultimately, after careful consideration, our team
-									decided that a chat interface was the most user-friendly and
-									familiar&nbsp;option.
-								</p>
-								<p>
-									For the MVP, we kept the interface simple with just a button
-									to analyze the headline, as additional options would have
-									added unnecessary complexity. The chat interface effectively
-									communicates a back-and-forth brainstorming tool and provides
-									flexibility for future developments of this&nbsp;feature.
-								</p> -->
-							</div>
-						</SmallContainer>
-						<LargeContainer>
-							<div class="mb-8 mt-16 grid gap-4">
-								<img
-									src={design1}
-									alt="High fidelity design mockups"
-									class="border border-solid border-slate-200"
-								/>
-								<div class="grid gap-4 md:grid-cols-2">
-									<img
-										src={design2}
-										alt="High fidelity design mockups"
-										class="border border-solid border-slate-200"
-									/>
-									<img
-										src={design3}
-										alt="High fidelity design mockups"
-										class="border border-solid border-slate-200"
-									/>
-								</div>
-							</div>
-						</LargeContainer>
-						<SmallContainer>
-							<div class="grid gap-y-4">
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Design</h3>
-								<p>
-									Designing the prompt and response experience for Headline AI
-									was a critical step in making the feature intuitive and
-									engaging. Using Figma, I created an interface that seamlessly
-									integrated with the rest of the Headline Studio&nbsp;app.
-								</p>
-								<p>I focused on:</p>
-								<ul class="grid list-disc gap-y-2 pl-8">
-									<li>
-										Formatting responses that were easily readable and scannable
-										for&nbsp;users.
-									</li>
-									<li>
-										Incorporating a Headline Bot persona to communicate with
-										users in a fun, conversational, and bot-like&nbsp;language.
-									</li>
-									<li>
-										Error handling, anticipating and designing for parsing
-										errors and response&nbsp;timeouts.
-									</li>
-								</ul>
-								<p>
-									Headline Studio has free and paid plans. The Headline AI
-									feature is only available to paid users. To give free users a
-									taste of the Headline AI feature and incentivize them to
-									upgrade to the paid plan, we designed the experience to allow
-									them to interact with the feature, but are prompted to upgrade
-									to unlock the AI response with generated&nbsp;headlines.
-								</p>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
-									Build & Launch
-								</h3>
-								<p>
-									At this phase I was responsible for implementing the HTML &
-									CSS for Headline AI. I worked closely with an engineer to
-									complete all necessary backend&nbsp;functionality.
+									Our solution was a hybrid approach. Triggered when the user
+									enables the Aeronautical layer, a single tip is used to make
+									users aware of the updated feature. The tip included a call to
+									action for the user to learn&nbsp;more.
 								</p>
 							</div>
 						</SmallContainer>
 						<LargeContainer>
-							<video
-								controls
-								autoplay
-								muted
-								loop
-								class="mb-8 mt-16 border border-solid border-slate-200"
-							>
-								<source src={animation} />
-								Your browser does not support the &lt;video&gt; tag.
-							</video>
+							<img
+								src={screens1}
+								alt="3 versions of feature onboarding"
+								class="mb-8 mt-16"
+							/>
+							<img
+								src={screens2}
+								alt="3 versions of feature onboarding"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<div class="grid gap-y-4">
+								<p>
+									If a user opted in, they would be taken through a series of
+									screens explaining the new interface and how to use the
+									Aeronautical Drawer elements.
+								</p>
+								<p>
+									Navigation buttons allowed users to move forward or backward
+									between screens.
+								</p>
+								<p>
+									A close button at the top of the screen allowed the user to
+									exit the experience at any time.
+								</p>
+								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+									Considerations & Constraints
+								</h2>
+								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+									User Context & Conditions
+								</h3>
+								<p>
+									Not only do pilots use our app for planning on the ground, it
+									is also used in flight. Therefore it is critical not to
+									interrupt users who are flying. The first-run experience was
+									designed to show only if a user is not in flight.
+								</p>
+								<p>
+									Additionally the experience would only appear if the
+									Aeronautical layer was enabled, as it is able to use Maps
+									without the Aeronautical layer.
+								</p>
+								<p>
+									Finally, this was only shown to current customers, as a new
+									user would not know the difference between the old
+									aeronautical layer filters and settings and the new
+									experience.
+								</p>
+							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img src={specs} alt="Tip design specs" class="mb-8 mt-16" />
 						</LargeContainer>
 						<SmallContainer>
 							<div class="grid gap-y-4">
 								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
-									Test & Refine
+									Developent Specs
 								</h3>
 								<p>
-									After the initial launch, we observed a couple of areas that
-									needed&nbsp;improvement.
-								</p>
-								<ul class="grid list-disc gap-y-2 pl-8">
-									<li>Initial greeting and prompt animation</li>
-									<li>Response time</li>
-								</ul>
-								<p>
-									First, from watching Hotjar I noticed users leaving before the
-									chat experience had fully animated in. My assumption was that
-									it was not immediately clear to these users what they could do
-									with the feature. We wanted to keep the animation because it
-									communicated to the user the chat-like experience. However I
-									did speed it up so users can see the prompts within less than
-									a second of visiting the AI&nbsp;tab.
-								</p>
-								<p>
-									Second, for our Headline AI analytics dashboard noticed
-									response times were creeping up, causing users to leave before
-									getting a response back. To address these issues, we
-									considered using a different loading indicator that was more
-									informative and made the wait time feel faster. However, we
-									decided to experiment with streaming in responses instead of
-									showing everything all at once. This approach improved the
-									response time and reduced the likelihood of users leaving
-									before getting a full&nbsp;response.
+									Detailed design specs were provided for the development team,
+									ensuring smooth handoff and implementation.
 								</p>
 								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">Impact</h2>
 								<h3 class="pt-8 text-xl font-medium lg:text-2xl">Engagement</h3>
@@ -345,57 +281,57 @@ import SmallContainer from "../components/foundation/SmallContainer.astro";
 									releases. This positive reception indicated that users
 									appreciated the clarity provided by the onboarding&nbsp;flow.
 								</p>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
-									Support Reduction
-								</h3>
-								<p>
-									There was a notable reduction in support inquiries related to
-									the Aeronautical Drawer, suggesting that the first-run
-									experience successfully reduced&nbsp;confusion.
-								</p>
-								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
-									Learnings & Next Steps
-								</h2>
-								<p>
-									During the development process of this feature, I had the
-									opportunity to lead ideation and design discussions, which
-									helped me improve my communication and leadership&nbsp;skills.
-								</p>
-								<p>
-									In addition, I experimented with prototypes in Figma, which
-									helped me deepen my knowledge of the tool. By creating a
-									working prototype, I was better able to communicate my ideas
-									to the team and receive useful&nbsp;feedback.
-								</p>
-								<p>
-									While working on this project, I found inspiration in the book <span
-										class="italic">The Design of Everyday Things</span
-									> by Don Norman. Norman emphasizes the importance of designing
-									for failure. This concept resonated with me, as I applied it to
-									ensure that the Headline AI feature would provide users with a
-									seamless experience, even in the event of unexpected errors or&nbsp;delays.
-								</p>
-								<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
-									Acknowledgements
-								</h2>
-								<ul class="grid gap-x-8 md:grid-cols-2">
-									<li>Jesse C., Software Engineer</li>
-									<li>Josh T., Director of International Growth</li>
-								</ul>
-								<h3 class="pt-8 text-xl font-medium lg:text-2xl">
-									Other Collaborators
-								</h3>
-								<ul class="grid gap-x-8 md:grid-cols-2">
-									<li>Don J.</li>
-									<li>Jason S.</li>
-									<li>Sam T.</li>
-									<li>Alejandro V.</li>
-								</ul>
-								<p class="pt-8 text-sm italic text-slate-600">
-									ForeFlight Mobile EFB is a property of ForeFlight. All
-									rights&nbsp;reserved.
-								</p>
 							</div>
+						</SmallContainer>
+						<LargeContainer>
+							<img
+								src={feedback}
+								alt="Facebook user group post with feature feedback"
+								class="mb-8 mt-16"
+							/>
+						</LargeContainer>
+						<SmallContainer>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Support Reduction
+							</h3>
+							<p>
+								There was a notable reduction in support inquiries related to
+								the Aeronautical Drawer, suggesting that the first-run
+								experience successfully reduced&nbsp;confusion.
+							</p>
+							<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+								Learnings & Next Steps
+							</h2>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Scaling the Experience
+							</h3>
+							<p>
+								Moving forward, we plan to implement the first-run tips for
+								other feature launches. However, we must consider how to avoid
+								overwhelming users with too many tips. A management system for
+								feature tips would be essential to strike the
+								right&nbsp;balance.
+							</p>
+							<h2 class="pt-8 text-2xl font-medium lg:text-3xl">
+								Acknowledgements
+							</h2>
+							<ul class="grid gap-x-8 md:grid-cols-2">
+								<li>Jesse C., Software Engineer</li>
+								<li>Josh T., Director of International Growth</li>
+							</ul>
+							<h3 class="pt-8 text-xl font-medium lg:text-2xl">
+								Other Collaborators
+							</h3>
+							<ul class="grid gap-x-8 md:grid-cols-2">
+								<li>Don J.</li>
+								<li>Jason S.</li>
+								<li>Sam T.</li>
+								<li>Alejandro V.</li>
+							</ul>
+							<p class="pt-8 text-sm italic text-slate-600">
+								ForeFlight Mobile EFB is a property of ForeFlight. All
+								rights&nbsp;reserved.
+							</p>
 						</SmallContainer>
 					</div>
 				</LargeContainer>
